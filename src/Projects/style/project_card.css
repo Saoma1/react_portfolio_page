@@ -41,18 +41,6 @@
   opacity: 0;
 }
 
-.project_buttons button {
-  font-size: 1.1rem;
-  border: 2px solid #e31b6d;
-  padding: 7px 14px;
-  transition: all 0.3s ease-in-out;
-}
-
-.project_buttons:hover button {
-  background-color: #e31b6d;
-  color: white;
-  cursor: pointer;
-}
 .project_card:hover .project_backround {
   opacity: 0;
 }
