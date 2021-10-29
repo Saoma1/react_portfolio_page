@@ -3,8 +3,8 @@ import ProjectContainer from "./Projects/ProjectContainer";
 
 function App() {
   return (
-    <div className="App">
-      <ProjectContainer />
+    <div className="App flex">
+      <ProjectContainer title="Projects" />
     </div>
   );
 }
