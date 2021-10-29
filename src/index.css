@@ -14,6 +14,15 @@
   box-sizing: border-box;
 }
 
+[data-theme="dark"] {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+  --sidebar-color: #66bb6a;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
