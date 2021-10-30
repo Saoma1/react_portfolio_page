@@ -1,9 +1,26 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { BiLinkExternal } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
 import "./style/modal.css";
 
+// useEffect(() => {
+//   document.body.addEventListener("keydown", closeOnEscapeKeyDown);
+//   return function cleanup() {
+//     document.body.removeEventListener("keydown", closeOnEscapeKeyDown);
+//   };
+// }, []);
+
 class CardModal extends Component {
+  constructor(props) {
+    super(props);
+    this.closeOnEscapeKeyDown = this.closeOnEscapeKeyDown.bind(this);
+  }
+
+  closeOnEscapeKeyDown = (evt) => {
+    if ((evt.charCode || evt.keyCode) === 27);
+    this.props.onClose();
+  };
+
   render() {
     const { onClose, display, title, description, repoUrl, repoPage, repoImg } = this.props;
 

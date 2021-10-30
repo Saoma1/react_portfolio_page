@@ -1,11 +1,11 @@
 import ProjectContainer from "./Projects/ProjectContainer";
-import Theme from "./Navbar/Theme";
+import Navbar from "./Navbar/Navbar";
 import "./App.css";
 
 function App() {
   return (
     <div className="App flex">
-      <Theme />
+      <Navbar />
       <ProjectContainer title="Projects" />
     </div>
   );
