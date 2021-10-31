@@ -1,6 +1,7 @@
 import React, { Component, useEffect } from "react";
 import { BiLinkExternal } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
+import { ImCancelCircle } from "react-icons/im";
 import "./style/modal.css";
 
 // useEffect(() => {
@@ -34,14 +35,19 @@ class CardModal extends Component {
                 <h1>{title}</h1>
                 <p>{description}</p>
               </div>
-              <div className="links flex">
-                <a href={repoPage} target="_blank" rel="noreferrer">
-                  <button className="flex">
-                    <BiLinkExternal /> Visit Page
-                  </button>
-                </a>
-                <a className="flex" href={repoUrl} target="_blank" rel="noopener noreferrer">
-                  <AiFillGithub />
+              <div className="link_wrapper links flex">
+                <div className="links flex">
+                  <a href={repoPage} target="_blank" rel="noreferrer">
+                    <button className="flex">
+                      <BiLinkExternal /> Visit Page
+                    </button>
+                  </a>
+                  <a className="flex" href={repoUrl} target="_blank" rel="noopener noreferrer">
+                    <AiFillGithub />
+                  </a>
+                </div>
+                <a href="./" className="flex">
+                  <ImCancelCircle />
                 </a>
               </div>
             </div>
