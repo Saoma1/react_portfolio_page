@@ -50,12 +50,22 @@ h2 {
 .modal .links {
   flex-direction: row;
 }
+
 .modal .links a {
   padding: 0;
   font-size: 2rem;
   margin-right: 1.5rem;
   color: var(--highlight-color);
   text-decoration: none;
+}
+
+.modal .size {
+  color: var(--highlight-color);
+  font-size: 2rem;
+}
+
+.modal .size:hover {
+  cursor: pointer;
 }
 
 .modal .links button {

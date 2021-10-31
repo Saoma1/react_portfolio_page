@@ -4,24 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
 import "./style/modal.css";
 
-// useEffect(() => {
-//   document.body.addEventListener("keydown", closeOnEscapeKeyDown);
-//   return function cleanup() {
-//     document.body.removeEventListener("keydown", closeOnEscapeKeyDown);
-//   };
-// }, []);
-
 class CardModal extends Component {
-  constructor(props) {
-    super(props);
-    this.closeOnEscapeKeyDown = this.closeOnEscapeKeyDown.bind(this);
-  }
-
-  closeOnEscapeKeyDown = (evt) => {
-    if ((evt.charCode || evt.keyCode) === 27);
-    this.props.onClose();
-  };
-
   render() {
     const { onClose, display, title, description, repoUrl, repoPage, repoImg } = this.props;
 
@@ -46,9 +29,7 @@ class CardModal extends Component {
                     <AiFillGithub />
                   </a>
                 </div>
-                <a href="./" className="flex">
-                  <ImCancelCircle />
-                </a>
+                <ImCancelCircle onClick={onClose} className="flex size" />
               </div>
             </div>
           </div>

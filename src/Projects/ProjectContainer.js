@@ -10,6 +10,27 @@ class ProjectContainer extends Component {
     this.state = { repos: [] };
   }
 
+  static defaultProps = {
+    projectCards: [
+      {
+        id: 1,
+        name: "Tester",
+        repoDescription: "Tester is a platform for solo developer or small startup that want to test new features with real users",
+        repoImgUrl: "/images/project/tester.png",
+        repoPage: "https://www.startup-testr.me/",
+        repoUrl: "https://github.com/anthonyjshaw/tester",
+      },
+      {
+        id: 2,
+        name: "YachtMe",
+        repoDescription: "YachtMe a mock up Airbnb clone where users can rent Yacht across the globe",
+        repoImgUrl: "/images/project/yachtme.jpg",
+        repoPage: "https://yacht-me.herokuapp.com/",
+        repoUrl: "https://github.com/a-negm/yacht-me",
+      },
+    ],
+  };
+
   async componentDidMount() {
     const repos = await createRepos();
     this.setState({ repos: repos });
@@ -21,6 +42,16 @@ class ProjectContainer extends Component {
         <h1>{this.props.title}</h1>
         <div className="project_container flex">
           {this.state.repos.map((repo) => (
+            <ProjectCard
+              key={repo.id}
+              title={repo.name}
+              description={repo.repoDescription}
+              img={repo.repoImgUrl}
+              repoPage={repo.repoPage}
+              repoUrl={repo.repoUrl}
+            />
+          ))}
+          {this.props.projectCards.map((repo) => (
             <ProjectCard
               key={repo.id}
               title={repo.name}

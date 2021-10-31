@@ -31,7 +31,6 @@ class ProjectCard extends Component {
           <div className="project_backround" style={{ backgroundImage: "url(" + img + ")" }}></div>
           <div className="project_text">
             <h2 className="project-title">{title}</h2>
-            {/* <p className="card-body">{description}</p> */}
           </div>
           <div className="project_buttons">
             <button onClick={this.handleClick}>Learn More</button>
