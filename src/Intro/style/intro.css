@@ -1,0 +1,8 @@
+.intro {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.intro img {
+  height: 100vh;
+}
