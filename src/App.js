@@ -1,13 +1,21 @@
 import ProjectContainer from "./Projects/ProjectContainer";
+import React, { useState } from "react";
 import Intro from "./Intro/Intro";
 import Navbar from "./Navbar/Navbar";
 import "./App.css";
 
 function App() {
+  const [color, setColor] = useState(getComputedStyle(document.body).getPropertyValue("--sidebar-color"));
+
+  const handleColorChange = (color) => {
+    console.log(color);
+    setColor(color);
+  };
+
   return (
     <div className="App flex">
-      <Navbar />
-      <Intro />
+      <Navbar colorChange={handleColorChange} />
+      <Intro mainColor={color} />
       <ProjectContainer title="Projects" />
     </div>
   );

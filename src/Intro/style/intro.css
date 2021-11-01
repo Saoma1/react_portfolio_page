@@ -1,8 +1,9 @@
 .intro {
   flex-direction: row;
   justify-content: space-between;
+  height: 100vh;
 }
 
-.intro img {
-  height: 100vh;
+.tsparticles-canvas-el {
+  position: absolute !important;
 }
