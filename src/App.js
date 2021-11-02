@@ -5,10 +5,10 @@ import Navbar from "./Navbar/Navbar";
 import "./App.css";
 
 function App() {
-  const [color, setColor] = useState(getComputedStyle(document.body).getPropertyValue("--sidebar-color"));
+  const [color, setColor] = useState("#66bb6a");
+  // useState(getComputedStyle(document.body).getPropertyValue("--sidebar-color"));
 
   const handleColorChange = (color) => {
-    console.log(color);
     setColor(color);
   };
 

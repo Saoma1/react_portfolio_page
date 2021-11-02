@@ -18,7 +18,11 @@ class Theme extends Component {
       document.body.setAttribute("data-theme", "light");
       this.setState({ text: "Enable Dark Mode!" });
     }
-    const lineColor = getComputedStyle(document.body).getPropertyValue("--sidebar-color");
+    let lineColor = getComputedStyle(document.body).getPropertyValue("--sidebar-color");
+    if (typeof InstallTrigger === "undefined") {
+      lineColor = lineColor.substring(1);
+    }
+    // console.log(`.${lineColor}`);
     this.props.colorChange(lineColor);
   };
 

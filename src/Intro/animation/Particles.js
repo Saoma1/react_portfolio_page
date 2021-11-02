@@ -4,6 +4,9 @@ import deer from "./small-deer.2a0425af.svg";
 
 function Canvas(props) {
   const lineColor = props.mainColor;
+  // console.log(props.mainColor);
+  // const color = props.mainColor;
+  // const lineColor = "#66bb6a";
   return (
     <Particles
       params={{
