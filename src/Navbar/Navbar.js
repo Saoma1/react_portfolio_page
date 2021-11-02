@@ -16,7 +16,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div className="navbar container">
+      <div className="navbar container pd">
         <h2>&lt;/&gt;</h2>
         <Theme colorChange={this.handleColorChange} />
       </div>

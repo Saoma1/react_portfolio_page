@@ -38,8 +38,10 @@ class ProjectContainer extends Component {
 
   render() {
     return (
-      <div className="container flex">
-        <h1>{this.props.title}</h1>
+      <div className="container full">
+        <div className="tright">
+          <h2>Projects</h2>
+        </div>
         <div className="project_container flex">
           {this.state.repos.map((repo) => (
             <ProjectCard

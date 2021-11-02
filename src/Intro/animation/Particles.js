@@ -4,16 +4,13 @@ import deer from "./small-deer.2a0425af.svg";
 
 function Canvas(props) {
   const lineColor = props.mainColor;
-  // console.log(props.mainColor);
-  // const color = props.mainColor;
-  // const lineColor = "#66bb6a";
   return (
     <Particles
       params={{
-        fps_limit: 20,
+        fps_limit: 15,
         particles: {
           number: {
-            value: 200,
+            value: 100,
             density: {
               enable: false,
             },
