@@ -5,6 +5,12 @@
   flex-direction: column;
 }
 
+.flex-n {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;

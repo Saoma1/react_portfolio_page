@@ -39,7 +39,7 @@ class ProjectContainer extends Component {
   render() {
     return (
       <div className="container full">
-        <div className="tright">
+        <div className="tright" id="work">
           <h2>Projects</h2>
         </div>
         <div className="project_container flex">
