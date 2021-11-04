@@ -42,27 +42,29 @@ class ProjectContainer extends Component {
         <div className="tright" id="work">
           <h2>Projects</h2>
         </div>
-        <div className="project_container flex">
-          {this.state.repos.map((repo) => (
-            <ProjectCard
-              key={repo.id}
-              title={repo.name}
-              description={repo.repoDescription}
-              img={repo.repoImgUrl}
-              repoPage={repo.repoPage}
-              repoUrl={repo.repoUrl}
-            />
-          ))}
-          {this.props.projectCards.map((repo) => (
-            <ProjectCard
-              key={repo.id}
-              title={repo.name}
-              description={repo.repoDescription}
-              img={repo.repoImgUrl}
-              repoPage={repo.repoPage}
-              repoUrl={repo.repoUrl}
-            />
-          ))}
+        <div className="flex">
+          <div className="project_container flex">
+            {this.state.repos.map((repo) => (
+              <ProjectCard
+                key={repo.id}
+                title={repo.name}
+                description={repo.repoDescription}
+                img={repo.repoImgUrl}
+                repoPage={repo.repoPage}
+                repoUrl={repo.repoUrl}
+              />
+            ))}
+            {this.props.projectCards.map((repo) => (
+              <ProjectCard
+                key={repo.id}
+                title={repo.name}
+                description={repo.repoDescription}
+                img={repo.repoImgUrl}
+                repoPage={repo.repoPage}
+                repoUrl={repo.repoUrl}
+              />
+            ))}
+          </div>
         </div>
       </div>
     );

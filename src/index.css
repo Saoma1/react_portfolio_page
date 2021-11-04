@@ -7,6 +7,7 @@
   --heading-color: #292922;
   --sidebar-color: #161625;
   --highlight-color: #e31b6d;
+  --form-color: #ffffff;
 }
 
 *,
@@ -23,6 +24,7 @@
   --bg-color: #161625;
   --heading-color: #818cab;
   --sidebar-color: #66bb6a;
+  --form-color: #202031;
 }
 
 body {
