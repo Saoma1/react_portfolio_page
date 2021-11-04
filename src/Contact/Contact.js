@@ -14,7 +14,7 @@ const ContactForm = () => {
 
   // Function that displays a success toast on bottom right of the page when form submission is successful
   const toastifySuccess = () => {
-    toast("Your message has been sent!", {
+    toast("Your message has been sent 🎉", {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: true,
