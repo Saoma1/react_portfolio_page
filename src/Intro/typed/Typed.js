@@ -6,11 +6,11 @@ export default function TypedText() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['Hello^1000 my name is Soto <br>^1000 I am a <span style="color: #c41b6d; font-weight: bold"> Web Developer</span>'],
-      startDelay: 1000,
+      strings: ['Hello^500 my name is Soto <br>^500 I am a <span style="color: #c41b6d; font-weight: bold"> Web Developer</span>'],
+      startDelay: 500,
       typeSpeed: 60,
       backSpeed: 60,
-      showCursor: false,
+      showCursor: true,
     });
     return () => {
       typed.destroy();

@@ -1,7 +1,6 @@
 .intro {
   flex-direction: row !important;
   justify-content: space-between;
-  /* height: 90vh; */
   width: 100%;
 }
 
@@ -12,7 +11,7 @@
 
 #tsparticles {
   width: 50%;
-  height: 100%;
+  height: 95vh;
 }
 
 .tsparticles-canvas-el {
