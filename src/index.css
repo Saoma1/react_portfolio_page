@@ -4,6 +4,7 @@
   --font-color: #424242;
   --font-color-hover: #1f1e1e;
   --bg-color: #f5f5f5;
+  --bg-color-rbg: 245, 245, 245;
   --heading-color: #292922;
   --sidebar-color: #161625;
   --highlight-color: #e31b6d;
@@ -22,6 +23,7 @@
   --font-color: #e1e1ff;
   --font-color-hover: #f8f8fa;
   --bg-color: #161625;
+  --bg-color-rbg: 22, 22, 37;
   --heading-color: #818cab;
   --sidebar-color: #66bb6a;
   --form-color: #202031;

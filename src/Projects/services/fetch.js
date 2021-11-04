@@ -48,7 +48,7 @@ async function createRepoObjects() {
 
 async function createRepos() {
   const repos = await createRepoObjects();
-  console.log(repos);
+  // console.log(repos);
   return repos;
 }
 

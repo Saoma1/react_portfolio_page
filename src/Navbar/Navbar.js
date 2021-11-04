@@ -32,28 +32,71 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div className="navbar container pd">
-        <h2>&lt;/&gt;</h2>
-        <ul className="nav_links flex" id={this.state.active ? "nav_active" : null}>
-          <li>
-            <Link onClick={this.handleClose} className="nav_link" activeClass="active" to="about" spy={true} smooth={true} duration={500}>
-              about
-            </Link>
-          </li>
-          <li>
-            <Link onClick={this.handleClose} className="nav_link" activeClass="active" to="work" spy={true} smooth={true} duration={500}>
-              work
-            </Link>
-          </li>
-          <li>
-            <Link onClick={this.handleClose} className="nav_link" activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
-              contact
-            </Link>
-          </li>
-        </ul>
-        <div className="flex-n">
-          <Theme colorChange={this.handleColorChange} />
-          <Hamburger className="menu" onToggle={this.handleClick} />
+      <div className="nabar_wrapper flex sticky">
+        <div className="navbar container pd">
+          <h2>&lt;/&gt;</h2>
+          <ul className="nav_links flex" id={this.state.active ? "nav_active" : null}>
+            <li>
+              <Link
+                onClick={this.handleClose}
+                className="nav_link"
+                activeClass="active"
+                to="home"
+                offset={-80}
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                home
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={this.handleClose}
+                className="nav_link"
+                activeClass="active"
+                to="about"
+                offset={-40}
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                about
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={this.handleClose}
+                className="nav_link"
+                activeClass="active"
+                to="work"
+                offset={-40}
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                work
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={this.handleClose}
+                className="nav_link"
+                activeClass="active"
+                to="contact"
+                offset={-40}
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                contact
+              </Link>
+            </li>
+          </ul>
+          <div className="flex-n">
+            <Theme colorChange={this.handleColorChange} />
+            <Hamburger className="menu" onToggle={this.handleClick} />
+          </div>
         </div>
       </div>
     );

@@ -1,6 +1,8 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import deer from "./small-deer.2a0425af.svg";
+// import deer from "./gh.svg";
+// import deer from "./hz.svg";
 
 function Canvas(props) {
   const lineColor = props.mainColor;

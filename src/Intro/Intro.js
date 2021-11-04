@@ -6,7 +6,7 @@ import "./style/intro.css";
 class Intro extends Component {
   render() {
     return (
-      <div className="intro flex container">
+      <div className="intro flex container full" id="home">
         <TypedText />
         <Canvas mainColor={this.props.mainColor} />
         {/* <img src="./images/project/profile_transparent.png" alt="" /> */}

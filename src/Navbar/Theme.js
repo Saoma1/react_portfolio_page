@@ -22,7 +22,6 @@ class Theme extends Component {
     if (typeof InstallTrigger === "undefined") {
       lineColor = lineColor.substring(1);
     }
-    console.log(`.${lineColor}`);
     this.props.colorChange(lineColor);
   };
 

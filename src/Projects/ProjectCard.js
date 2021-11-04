@@ -10,7 +10,6 @@ class ProjectCard extends Component {
   }
 
   handleClick = () => {
-    console.log("modal");
     this.setState({ modal: true });
   };
 
