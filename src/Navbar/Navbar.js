@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Theme from "./Theme";
 import { Link } from "react-scroll";
 import Hamburger from "hamburger-react";
+import { HiOutlineDownload } from "react-icons/hi";
 import "./style/navbar.css";
 
 class Navbar extends Component {
@@ -94,6 +95,11 @@ class Navbar extends Component {
             </li>
           </ul>
           <div className="flex-n">
+            <button className="resume_btn">
+              <a className="flex" href="./assets/Sotirios Dimitriou CV.pdf" target="_blank" download>
+                <HiOutlineDownload /> resume
+              </a>
+            </button>
             <Theme colorChange={this.handleColorChange} />
             <Hamburger className="menu" onToggle={this.handleClick} />
           </div>
