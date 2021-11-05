@@ -67,3 +67,10 @@
   opacity: 1;
   bottom: 7%;
 }
+
+@media (max-width: 489px) {
+  .project_card_wrapper {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
