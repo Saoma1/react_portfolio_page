@@ -69,6 +69,17 @@
   border: 1px solid var(--highlight-color);
   background-image: none;
 }
+@media (max-width: 768px) {
+  .about_wrapper {
+    flex-direction: column;
+  }
+  .about_text {
+    width: 95%;
+  }
+  .photo_wrapper {
+    margin: 2rem 0;
+  }
+}
 
 @media (max-width: 480px) {
   .title {
@@ -79,14 +90,9 @@
   }
   .tright {
     justify-content: center;
+    width: 100%;
   }
   .tright::before {
     content: none;
-  }
-  .about_wrapper {
-    flex-direction: column;
-  }
-  .about_text {
-    width: 95%;
   }
 }
