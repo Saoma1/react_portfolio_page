@@ -38,7 +38,7 @@
 
 .about_wrapper {
   width: 100%;
-  justify-content: space-around !important;
+  justify-content: space-between !important;
 }
 
 .about_text {

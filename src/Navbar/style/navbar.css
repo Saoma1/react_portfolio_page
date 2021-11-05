@@ -84,12 +84,12 @@
   color: white;
 }
 
+.pd {
+  padding: 0 1rem;
+}
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
-  }
-  .pd {
-    padding: 0 1rem;
   }
   .nav_links {
     font-size: 1.1rem;

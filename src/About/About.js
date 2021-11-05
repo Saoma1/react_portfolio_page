@@ -7,10 +7,7 @@ class About extends Component {
     return (
       <div className="container full">
         <div className="title" name="about">
-          <h2>
-            Skills & <br />
-            Experience
-          </h2>
+          <h2>About</h2>
         </div>
         <div className="pd">
           <div className="about_wrapper flex-n">

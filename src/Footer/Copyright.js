@@ -5,7 +5,7 @@ class Copyright extends Component {
   render() {
     return (
       <div className="copyright">
-        <h3>Sotirios Dimitriou {new Date().getFullYear()} &#169;</h3>
+        <h3> Copyright &#169; {new Date().getFullYear()} Sotirios Dimitriou</h3>
       </div>
     );
   }
