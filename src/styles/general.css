@@ -34,3 +34,9 @@ button:hover {
   color: white;
   cursor: pointer;
 }
+
+@media (max-width: 1236px) {
+  .pd {
+    padding: 0 1rem;
+  }
+}

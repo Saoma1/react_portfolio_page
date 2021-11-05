@@ -84,9 +84,6 @@
   color: white;
 }
 
-.pd {
-  padding: 0 1rem;
-}
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
