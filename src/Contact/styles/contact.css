@@ -1,6 +1,9 @@
+.contact_container {
+  margin-bottom: 0;
+}
+
 .ContactForm_wrapper {
   height: 80vh;
-  /* line-height: 3rem; */
 }
 
 .contactForm {

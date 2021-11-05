@@ -69,6 +69,18 @@
   border: 1px solid var(--highlight-color);
   background-image: none;
 }
+
+.skills {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills li {
+  list-style-type: none;
+  line-height: 1.5rem;
+}
+
 @media (max-width: 768px) {
   .about_wrapper {
     flex-direction: column;
@@ -78,6 +90,13 @@
   }
   .photo_wrapper {
     margin: 2rem 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

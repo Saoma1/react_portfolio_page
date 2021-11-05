@@ -29,6 +29,33 @@ class About extends Component {
               <div className="photo_box"></div>
             </div>
           </div>
+          <div className="skills">
+            <div>
+              <h3>Languages</h3>
+              <ul>
+                <li>JavaScript (ES6)</li>
+                <li>HTML</li>
+                <li>CSS/SCSS</li>
+                <li>Ruby</li>
+                <li>Python</li>
+                <li>SQL(PostgreSQL)</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Frameworks</h3>
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>React</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Tools</h3>
+              <ul>
+                <li>Git & Github</li>
+                <li>Heroku</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     );

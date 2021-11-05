@@ -17,8 +17,8 @@
 }
 
 .full {
-  /* padding-top: 10rem; */
   min-height: 95vh;
+  margin-bottom: 5rem;
 }
 
 button {
