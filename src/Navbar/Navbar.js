@@ -95,12 +95,12 @@ class Navbar extends Component {
             </li>
           </ul>
           <div className="flex-n">
+            <Theme colorChange={this.handleColorChange} />
             <button className="resume_btn">
               <a className="flex" href="./assets/Sotirios Dimitriou CV.pdf" target="_blank" download>
                 <HiOutlineDownload /> resume
               </a>
             </button>
-            <Theme colorChange={this.handleColorChange} />
             <Hamburger className="menu" onToggle={this.handleClick} />
           </div>
         </div>
