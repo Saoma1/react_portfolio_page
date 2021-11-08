@@ -34,7 +34,7 @@ async function createRepoObjects() {
               repoImgUrl: repo.homepage,
               repoDescription: repo.description,
               repoUrl: repo.html_url,
-              repoPage: `https://sotiriosdimitriou.com/${repo.name}`,
+              repoPage: `https://saoma1.github.io/${repo.name}`,
             });
           }
         })
