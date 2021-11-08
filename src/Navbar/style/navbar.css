@@ -80,7 +80,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.resume_btn a:hover {
+.resume_btn:hover a {
   color: white;
 }
 
