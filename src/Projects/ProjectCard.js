@@ -14,7 +14,7 @@ class ProjectCard extends Component {
   };
 
   render() {
-    const { title, description, img, repoPage, repoUrl } = this.props;
+    const { title, description, img, repoPage, repoUrl, btn } = this.props;
     return (
       <div className="project_card_wrapper">
         <CardModal
@@ -24,6 +24,7 @@ class ProjectCard extends Component {
           repoUrl={repoUrl}
           repoPage={repoPage}
           repoImg={img}
+          btn={btn}
           onClose={() => this.setState({ modal: false })}
         />
         <div className="project_card">

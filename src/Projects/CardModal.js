@@ -5,8 +5,10 @@ import { ImCancelCircle } from "react-icons/im";
 import "./style/modal.css";
 
 class CardModal extends Component {
+  static defaultProps = { btn: true };
+
   render() {
-    const { onClose, display, title, description, repoUrl, repoPage, repoImg } = this.props;
+    const { onClose, display, title, description, repoUrl, repoPage, repoImg, btn } = this.props;
 
     if (display) {
       return (
@@ -20,11 +22,17 @@ class CardModal extends Component {
               </div>
               <div className="link_wrapper links flex">
                 <div className="links flex">
-                  <a href={repoPage} target="_blank" rel="noreferrer">
-                    <button className="flex">
-                      <BiLinkExternal /> Visit Page
-                    </button>
-                  </a>
+                  {btn ? (
+                    <a href={repoPage} target="_blank" rel="noreferrer">
+                      <button className="flex">
+                        <BiLinkExternal /> Visit Page
+                      </button>
+                    </a>
+                  ) : (
+                    <a href="./" rel="noreferrer" style={{ pointerEvents: "none" }}>
+                      <button className="flex">Under Development</button>
+                    </a>
+                  )}
                   <a className="flex" href={repoUrl} target="_blank" rel="noopener noreferrer">
                     <AiFillGithub />
                   </a>

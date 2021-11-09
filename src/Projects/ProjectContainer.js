@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProjectCard from "./ProjectCard";
-import { createRepos } from "./services/fetch";
+// import { createRepos } from "./services/fetch";
 import "./style/project_container.css";
 import "../styles/general.css";
 
@@ -28,13 +28,47 @@ class ProjectContainer extends Component {
         repoPage: "https://yacht-me.herokuapp.com/",
         repoUrl: "https://github.com/a-negm/yacht-me",
       },
+      {
+        id: 3,
+        name: "Watch List",
+        repoDescription: "A small application to keep track of the movies you love, 3 model full-stack web app with rails",
+        repoImgUrl: "/images/project/rails-watch.jpg",
+        repoPage: "https://my-movie-watch-list-app.herokuapp.com/",
+        repoUrl: "https://github.com/Saoma1/rails-watch-list",
+      },
+      {
+        id: 4,
+        name: "Handsome Tip Calculator",
+        repoDescription:
+          "An awesome little tool to split the tip evenly among your company of friends. No more headaches that comes with the check!!",
+        repoImgUrl: "/images/project/tip-calc.jpg",
+        repoPage: "https://saoma1.github.io/tip-calculator-app-main/",
+        repoUrl: "https://github.com/Saoma1/tip-calculator-app-main",
+      },
+      {
+        id: 5,
+        name: "Task Manager",
+        repoDescription: "A simple Task Manager build with React, you can easily create tasks, delete or mark as done ",
+        repoImgUrl: "/images/project/task.png",
+        repoPage: "https://saoma1.github.io/react-task-manager/",
+        repoUrl: "https://github.com/Saoma1/react-task-manager",
+      },
+      {
+        id: 6,
+        name: "Looper",
+        repoDescription: "A website to search for your favorite upcoming movies, add them to your list and get notified when torrents are available.",
+        repoImgUrl: "/images/project/looper.jpg",
+        repoPage: "https://saoma1.github.io/rails-movie-checker",
+        repoUrl: "https://github.com/Saoma1/rails-movie-checker",
+        btn: false,
+      },
     ],
   };
 
-  async componentDidMount() {
-    const repos = await createRepos();
-    this.setState({ repos: repos });
-  }
+  // async componentDidMount() {
+  //   const repos = await createRepos();
+  //   this.setState({ repos: repos });
+  // }
 
   render() {
     return (
@@ -44,7 +78,7 @@ class ProjectContainer extends Component {
         </div>
         <div className="flex">
           <div className="project_container flex">
-            {this.state.repos.map((repo) => (
+            {/* {this.state.repos.map((repo) => (
               <ProjectCard
                 key={repo.id}
                 title={repo.name}
@@ -52,8 +86,9 @@ class ProjectContainer extends Component {
                 img={repo.repoImgUrl}
                 repoPage={repo.repoPage}
                 repoUrl={repo.repoUrl}
+
               />
-            ))}
+            ))} */}
             {this.props.projectCards.map((repo) => (
               <ProjectCard
                 key={repo.id}
@@ -62,6 +97,7 @@ class ProjectContainer extends Component {
                 img={repo.repoImgUrl}
                 repoPage={repo.repoPage}
                 repoUrl={repo.repoUrl}
+                btn={repo.btn}
               />
             ))}
           </div>
