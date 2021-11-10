@@ -19,8 +19,8 @@ class About extends Component {
               </p>
               <br />
               <p>
-                That was it, I was hooked. After that I saw that I wanted to pursue this path full time. A couple of months latter I enrolled in the
-                10 week full-stack developer bootcamp from Le Wagon. There I learned a plethora of languages and tools including HTML, CSS, JavaScript
+                That was it, I was hooked. After that I saw that I wanted to pursue this path full time. A couple of months later I enrolled in the 10
+                week full-stack developer bootcamp from Le Wagon. There I learned a plethora of languages and tools including HTML, CSS, JavaScript
                 ES6, Ruby & Ruby on Rails (including the MVC-Framework), SQL, git & GitHub, Heroku and much more.
               </p>
             </div>
