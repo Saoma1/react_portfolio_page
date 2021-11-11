@@ -1,23 +1,29 @@
 import React, { Component } from "react";
-// import { CgSun } from "react-icons/cg";
-// import { HiMoon } from "react-icons/hi";
 import "./style/theme.css";
 
 class Theme extends Component {
   constructor(props) {
     super(props);
-    // this.state = { text: "Enable Dark Mode!", color: "" };
+    this.state = {
+      checked: localStorage.getItem("data-theme") === "light" ? "" : "true",
+    };
     this.handelChange = this.handelChange.bind(this);
+  }
+
+  componentDidMount() {
+    let theme = localStorage.getItem("data-theme");
+    document.body.setAttribute("data-theme", theme);
   }
 
   handelChange = (evt) => {
     if (evt.target.checked) {
       document.body.setAttribute("data-theme", "dark");
-      // this.setState({ text: "Enable Light Mode!" });
+      localStorage.setItem("data-theme", "dark");
     } else {
       document.body.setAttribute("data-theme", "light");
-      // this.setState({ text: "Enable Dark Mode!" });
+      localStorage.setItem("data-theme", "light");
     }
+
     let lineColor = getComputedStyle(document.body).getPropertyValue("--sidebar-color");
     if (typeof InstallTrigger === "undefined") {
       lineColor = lineColor.substring(1);
@@ -29,10 +35,9 @@ class Theme extends Component {
     return (
       <div onChange={this.handelChange} className="theme-switch-wrapper">
         <label className="theme-switch" htmlFor="checkbox">
-          <input type="checkbox" id="checkbox" />
+          <input type="checkbox" id="checkbox" defaultChecked={this.state.checked} />
           <div className="slider round"></div>
         </label>
-        {/* <em>{this.state.text}</em> */}
       </div>
     );
   }

@@ -1,7 +1,13 @@
 .copyright {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   width: 100%;
-  bottom: 0;
+}
+
+@media (max-height: 600px) {
+  .copyright {
+    height: 20vh;
+  }
 }

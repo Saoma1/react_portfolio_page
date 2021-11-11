@@ -1,5 +1,5 @@
 .contact_container {
-  margin-bottom: 0;
+  margin-bottom: 0rem;
 }
 
 .ContactForm_wrapper {
@@ -46,10 +46,4 @@ textarea.form-control {
   background-color: var(--form-color);
   color: var(--font-color);
   padding: 15px 50px;
-}
-
-@media (max-width: 768px) {
-  .contactForm {
-    width: 90%;
-  }
 }
