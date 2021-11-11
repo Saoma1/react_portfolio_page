@@ -48,7 +48,7 @@ export class Dots extends Component {
                   speed: 1,
                   sync: false,
                 },
-                value: 0.4,
+                value: 0.1,
               },
             },
             interactivity: {

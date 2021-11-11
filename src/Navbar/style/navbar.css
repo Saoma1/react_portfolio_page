@@ -88,6 +88,9 @@
   body {
     overflow-x: hidden;
   }
+  .nabar_wrapper {
+    box-shadow: 0 0px 10px var(--font-color);
+  }
   .nav_links {
     font-size: 1.1rem;
     width: 100%;

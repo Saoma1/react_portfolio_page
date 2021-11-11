@@ -8,7 +8,7 @@ class Intro extends Component {
   render() {
     return (
       <div className="intro flex container full" id="home">
-        <Dots mainColor={this.props.mainColor} />
+        {/* <Dots mainColor={this.props.mainColor} /> */}
         {/* <TypedText /> */}
         <div className="intro_text">
           <p>Hello, my name is</p>
