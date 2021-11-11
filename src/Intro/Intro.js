@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import Canvas from "./animation/Particles";
-import Dots from "./animation/Dots";
+// import Dots from "./animation/Dots";
 // import TypedText from "./typed/Typed";
 import "./style/intro.css";
 
